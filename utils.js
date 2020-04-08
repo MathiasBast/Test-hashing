@@ -34,7 +34,11 @@ function checkPassword (data, callback) {
       bcrypt.compare(data.password, HashPassword, function (err, result) {
         if (err) Error('not working at hashing')
         if (result) {
-          callback(null, result)
+          var data = {
+            result,
+            id: json.users[indx].id
+          }
+          callback(null, data)
         } else {
           var aErr = new Error('User Name or password not found')
           callback(aErr, null)

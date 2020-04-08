@@ -27,6 +27,13 @@
       "age": "52",
       "qualites": "Big Feet",
       "password": "$2b$10$0MQq2wQ/OfS3hZbDturi5eGBhblk3IJzi2YNDzjsiBVO0a61dizUq"
+    },
+    {
+      "id": 5,
+      "name": "Fushia",
+      "age": "18",
+      "qualites": "Funny",
+      "password": "$2b$10$mIsaLTnl6ggVqxRE5UchKueT9BAD2hdPvH4kZUoB0KVpaBbH7CwTq"
     }
   ]
 }

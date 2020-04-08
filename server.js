@@ -1,8 +1,10 @@
 const express = require('express')
 const hbs = require('express-handlebars')
 const router = require('./routes')
+
 // =========================
 const server = express()
+
 
 // Middleware
 server.engine('hbs', hbs({

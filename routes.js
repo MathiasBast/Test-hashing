@@ -6,6 +6,7 @@ const myData = require('./data.json')
 const utils = require('./utils')
 
 router.get('/', (req, res) => {
+  console.log(req.session)
   res.render('home', myData)
 })
 
@@ -13,7 +14,7 @@ router.get('/add', (req, res) => {
   res.render('add', myData)
 })
 
-router.post('/add', (req, res) => {
+router.post('/add ', (req, res) => {
   const { name, age, qualites, password } = req.body
   let data = {
     id: myData.users.length + 1,
